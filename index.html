@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KBC-KAUN BANEGA CROREPATI</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <DIV class="main">
+         <button id="timer" class="time-btn">00</button>
+        <div id="box">
+            <div id="logo" class="logme"><img src="assets/logo.png"></div>
+            <div id="dev-info" class="myclass">
+            </div>
+         <div id="question-container" class="hide">
+            <div id="ques-price">(Q.No. 1) Price: Rs.10000</div>
+            <div id="question">What is the Capital of India?</div>
+            <div id="answer-btn" class="btn-grid">
+                <button class="btn">Kolkata</button>
+                <button class="btn">New Delhi</button>
+                <button class="btn">Agra</button>
+                <button class="btn">Lucknow</button>
+            </div>
+         </div>
+         <div class="hide" id="winning">
+            <h3>YOUR WINNING AMOUNT</h3>
+           <h3>Rs.<input type="text" id="win-amount" readonly="true"></h3>
+            <button id="restart" onclick="window.location.href='index.html'";>Play Again</button>
+        </div>
+        <div class="controls">
+            <button id="start-btn" onclick="PlayIntro();" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+        </div>
+    </DIV>
+
+    <script src="assets/app.js"></script>
+     
+</body>
+</html>
+
+

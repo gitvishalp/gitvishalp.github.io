@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-image: url('images.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color:white;
+    font-family:'Times New Roman', Times, serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#box{
+    padding: 20px;
+    width: 60%;
+    height: 400px;
+    border-radius: 20px;
+}
+#question{
+   margin: 20px;
+   padding: 30px;
+   font-size: 30px;
+   background-image: linear-gradient(to right,#200230,#690475);
+   height: 120px;
+   box-shadow: rgba(0,0,0,0.24) 0px 3px 8px inset;
+   text-align: center;
+   border:4px solid #e4a317;
+   border-radius: 45px;
+}
+
+.btn{
+    font-size: 20px;
+    height: 60px;
+    width: 400px;
+    margin-top: 30px;
+    margin-left: 25px;
+    background-image: linear-gradient(to right,#200230,#690475);
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px inset;
+    color: white;
+    border:2px solid #e4a317;
+    border-radius: 45px;
+}
+.btn:hover{
+    background-image:linear-gradient(to right,#a06e00,#f5db39);
+     color: black;
+}
+.btn.correct{
+    background-image: linear-gradient(to right,#395c00,#97ff00);
+    color: black;
+}
+.btn.wrong{
+    background-image:linear-gradient(to right,#540101,#fe2222);
+    color: white;
+}
+#start-btn{
+    font-size: 25px;
+    height: 50px;
+    width: 300px;
+    margin-top: 100px;
+    background-color: rgb(190, 3, 181);
+    color: white;
+}
+
+#next-btn{
+    font-size: 18px;
+    height: 30px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: rgb(190, 3, 181);
+    color: white;
+}
+
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide{
+    display: none;
+}
+
+
+#winning{
+    font-size: 25px;
+    background-image: linear-gradient(to right,#200230,#690475);
+    border:4px solid #e4a317;
+    color:  #e4a317;
+     text-align: center;
+     height: 200px;
+     padding: 50px;
+     border-radius: 30px;
+     margin-top:20px;
+}
+#winning input{
+    width: 300px;
+    height: 60px;
+    font-size: 40px;
+    font-weight: 900;
+    background-color: transparent;
+    color:#e4a317;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+}
+#winning button{
+    font-size: 18px;
+    height: 30px;
+    width: 200px;
+    background-image: linear-gradient(to right,#200230,#690475);
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px inset;
+    color: white;
+    border:2px solid #e4a317;
+    border-radius: 45px;
+}
+#winning button:hover{
+    background-image:linear-gradient(to right,#a06e00,#f5db39);
+    color: black;  
+}
+
+#ques-price{
+    background-image: linear-gradient(to right,#200230,#690475);
+    text-align: center;
+    color:  #e4a317;
+    height: 40px;
+    width: 500px;
+    font-size:25px;
+    margin-left: 200px;
+    border: 2px solid #e4a317;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.time-btn{
+      
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right,#200230,#690475);
+    color: white;
+    font-size: 20px;
+    border: 3px solid #e4a317;
+}
+
+#logo{
+    text-align: center;
+}
+#logo img{
+    height: 190px;
+    width: 190px;
+    border: 3px solid #690475;
+    border-radius: 100px;
+}
+#dev-info{
+    font-size: 20px;
+    margin-top: 0px;
+    text-align: center;
+    background-image: linear-gradient(to right,#200230,#690475); ;
+    color: white;
+    height: 50px;
+    padding: 12px;
+    border-radius: 30px;
+    width: auto;
+    border: 3px solid white;
+}
+
+@media only screen and (max-width:768px) {
+    body{
+        background-size: cover;
+        
+    }
+    #dev-info{
+        width: 100%;
+        font-size: 10px;
+    }
+    #logo img{
+       margin-top: 20px;
+    }
+    .time-btn{
+        margin-top: 30px;
+        padding: 10px;
+        height: auto;
+        width: auto;
+    }
+    #ques-price{
+      
+       margin-top: 10px;
+       margin: 0px;
+      width: auto;
+    }
+   #box{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+#question{
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    height: auto;
+ }
+ .btn{
+    margin-left:50px ;
+    font-size: 18px;
+    height: auto;
+    width: 80%;
+    padding: 10px;
+}
+#next-btn{
+    font-size: 18px;
+    height: auto;
+    width: 80%;
+   
+}
+#winning{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 20px;
+    height: auto;
+    padding: 20px;
+    border-radius: 30px;
+}
+#winning input{
+    margin: 0;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+}
+}
